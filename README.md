@@ -34,7 +34,7 @@ puppeteer-core:browser_alias_name?param1=value&param2=value&param3=value
 
 Parameters:
 - `url`: the url to connect to the remote Chromium instance (defaults to `http://127.0.0.1:9222`).
-- `resolve`: whether or not to resolve the hostname in the url as a workaround to the issue described in GoogleChrome/puppeteer#2242 (defaults to false).
+- `resolve`: whether or not to resolve the hostname in the url as a workaround to the issue described in [GoogleChrome/puppeteer#2242](https://github.com/GoogleChrome/puppeteer/issues/2242) (defaults to false).
 
 Example:
 
