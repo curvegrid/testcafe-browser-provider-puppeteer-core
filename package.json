@@ -1,0 +1,46 @@
+{
+  "name": "testcafe-browser-provider-puppeteer-core",
+  "version": "1.0.0",
+  "description": "puppeteer-core TestCafe browser provider plugin.",
+  "repository": "https://github.com/curvegrid/testcafe-browser-provider-puppeteer-core",
+  "homepage": "https://github.com/curvegrid/testcafe-browser-provider-puppeteer-core",
+  "author": {
+    "name": "Pierre Rousset",
+    "email": "pierre@curvegrid.com"
+  },
+  "main": "lib/index",
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "test": "gulp test",
+    "build": "gulp build",
+    "publish-please": "publish-please",
+    "prepublish": "publish-please guard"
+  },
+  "keywords": [
+    "testcafe",
+    "browser provider",
+    "plugin"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "@babel/runtime": "^7.6.3",
+    "progress": "^2.0.3",
+    "puppeteer-core": "^1.20.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-runtime": "^7.6.2",
+    "@babel/preset-env": "^7.6.3",
+    "babel-eslint": "^10.0.3",
+    "babel-plugin-add-module-exports": "^1.0.2",
+    "del": "^5.1.0",
+    "eslint": "^6.5.1",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^6.0.0",
+    "gulp-mocha": "^7.0.2",
+    "publish-please": "^5.5.1"
+  }
+}
