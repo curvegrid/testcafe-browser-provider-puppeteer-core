@@ -40,8 +40,18 @@ export default {
 
             switch (action) {
                 case 'connect':
+                    var url = new URL(params.url || 'http://127.0.0.1:9222');
+
+                    // see: https://github.com/GoogleChrome/puppeteer/issues/2242
+                    if (params.resolve === 'true') {
+                        const dns = require('dns').promises;
+                        const { address: address } = await dns.lookup(url.hostname);
+
+                        url.hostname = address;
+                    }
+
                     this._browsers[browserName] = await puppeteer.connect({
-                        browserURL: params.url || 'http://127.0.0.1:9222'
+                        browserURL: url.toString()
                     });
                     break;
 
