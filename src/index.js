@@ -97,7 +97,7 @@ export default {
 
         // if it's the last page, close the browser
         if ((await this._browsers[browserName].pages()).length === 0) {
-            await this._browsers.close();
+            await this._browsers[browserName].close();
             delete this._browsers[browserName];
         }
     },
