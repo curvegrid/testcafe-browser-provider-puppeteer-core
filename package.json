@@ -1,6 +1,6 @@
 {
   "name": "testcafe-browser-provider-puppeteer-core",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "puppeteer-core TestCafe browser provider plugin.",
   "repository": "https://github.com/curvegrid/testcafe-browser-provider-puppeteer-core",
   "homepage": "https://github.com/curvegrid/testcafe-browser-provider-puppeteer-core",
